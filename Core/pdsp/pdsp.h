@@ -82,7 +82,7 @@ extern uint32_t CODEC_FS[];
 
 /* Private define ------------------------------------------------------------*/
 #define PDSP_CODEC_Fs						    (float)CODEC_FS[PDSP_FS]
-#define PDSP_CODEC_Ts                      (1 / (float)CODEC_FS[PDSP_FS])
+#define PDSP_CODEC_Ts                   (1.0f / (float)CODEC_FS[PDSP_FS])
 
 #if (PDSP_SAMPLE_SIZE == 1)
 #define PDSP_CODEC_Vres       (PDSP_CODEC_Vpp / PDSP_CODEC_Bres)	//

@@ -340,7 +340,7 @@ void HAL_DAC_MspDeInit(DAC_HandleTypeDef *dacHandle) {
 /** @brief This function handles TIM6 global interrupt, DAC channel1 and channel2 underrun error interrupts.  */
 void TIM6_DAC_IRQHandler(void) {
 	AD_On(DEBUG_TIM6_IRQ_IO);
-	AD_On(DEBUG_PROCESSING_IO);
+
 	if (__HAL_TIM_GET_FLAG(&htim6, TIM_FLAG_UPDATE) != RESET) {
 		if (__HAL_TIM_GET_IT_SOURCE(&htim6, TIM_IT_UPDATE) != RESET) {
 			__HAL_TIM_CLEAR_IT(&htim6, TIM_IT_UPDATE);

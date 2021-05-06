@@ -38,7 +38,7 @@ typedef struct {
 } GenControl_t;
 
 extern Menu_t * hMenu;
-extern
+
 
 void MENU_Init(Menu_t *menu);
 void MENU_Operation(Menu_t *menu, uint16_t GPIO_Pin);
