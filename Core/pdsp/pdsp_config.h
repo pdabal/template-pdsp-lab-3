@@ -22,9 +22,9 @@ extern "C" {
 
 // Do wyboru jedna z lini konfigurującej wejście kodeka AIC23:
 //#define PDSP_INPUT      		PDSP_IN_UART
-#define PDSP_INPUT        		PDSP_IN_ADC_MIC
+//#define PDSP_INPUT        	PDSP_IN_ADC_MIC
 //#define PDSP_INPUT        	PDSP_IN_ADC_WVG
-//#define PDSP_INPUT        	PDSP_IN_NONE
+#define PDSP_INPUT        	PDSP_IN_NONE
 
 #define PDSP_OUTPUT			(PDSP_OUT_UART | PDSP_OUT_DAC)
 //#define PDSP_OUTPUT				PDSP_OUT_UART
@@ -38,8 +38,8 @@ extern "C" {
 //#define PDSP_FS          		FREQ_44_KHz    // 6713 DSK at 44kHz sample rate
 //#define PDSP_FS          		FREQ_32_KHz    // 6713 DSK at 32kHz sample rate
 //#define PDSP_FS          		FREQ_24_KHz    // 6713 DSK at 24kHz sample rate
-#define PDSP_FS          		FREQ_16_KHz    // 6713 DSK at 16kHz sample rate
-//#define PDSP_FS          		FREQ_8_KHz     // 6713 DSK at 8kHz sample rate
+//#define PDSP_FS          		FREQ_16_KHz    // 6713 DSK at 16kHz sample rate
+#define PDSP_FS          		FREQ_8_KHz     // 6713 DSK at 8kHz sample rate
 
 // Do wyboru jedna z lini konfigurującej typ bufora
 #define PDSP_BUFFOR             PDSP_BUFFOR_SINGLE
