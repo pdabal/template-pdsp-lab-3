@@ -102,6 +102,8 @@ void callbackOutput(void *m) {
 
 MenuItem_t itemBaud = { (uint8_t*) "Baud.", NULL, MENU_PARAMETER_IS_NUMBER, 96000 };
 
+MenuItem_t itemTime = { (uint8_t*) "Time", NULL, MENU_PARAMETER_IS_NUMBER, 0 };
+
 MenuItem_t itemAmplitude = { (uint8_t*) "Ampl.", callbackAmpl, MENU_PARAMETER_IS_NUMBER | MENU_CALLBACK_IS_FUNCTION,
 		1100 };
 MenuItem_t itemFrequency = { (uint8_t*) "Freq.", callbackFreq, MENU_PARAMETER_IS_NUMBER | MENU_CALLBACK_IS_FUNCTION,
